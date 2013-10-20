@@ -9,22 +9,32 @@
 
 <script type="text/template" id="template_tryit">
     <div class="tryit-content center-exp">
-        <table class="tool">
-            <tr>
-                <td>
-                    <input type="text" value="test">
-                </td>
-                <td>
-                    <button class="bn-check btn">Action</button>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="checkio-result">
-                    Result:<br>
-                    <span class="checkio-result-in">&nbsp;</span>
-                </td>
-            </tr>
-
-        </table>
-    </div>
+        <form class="input-test">
+            <table class="tool">
+                <tr>
+                    <td>
+                        Numerator:
+                    </td>
+                    <td>
+                        <input type="text" class="input-numerator uneditable-input"/>
+                    </td>
+                    <td>
+                        Denominator:
+                    </td>
+                    <td>
+                        <input type="text" class="input-denominator uneditable-input"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <button type="submit" class="bn_check btn">Convert Fraction</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="checkio-result">&nbsp;</div>
+                    </td>
+                </tr>
+            </table>
+        </form>
 </script>
