@@ -63,9 +63,18 @@
     font-family: verdana;
 }
 
+.tryit-content .tool {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 400px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #294270;
+    text-align: center;
+}
+
 .tryit-content .tool td{
     text-align: center;
-    vertical-align: top;
     padding: 3px;
 }
 
@@ -78,7 +87,7 @@
     font-size: 16px;
     text-align: center;
     color: #294270;
-    width: 160px;
+    display: inline-table;
 }
 
 .tryit-content .btn {
@@ -129,6 +138,7 @@ fieldset[disabled] .btn {
 .tryit-content input[type="text"],
 .tryit-content input[type="number"]
 {
+    width: 50px;
     display: inline-block;
     padding: 4px 6px;
     font-size: 14px;
