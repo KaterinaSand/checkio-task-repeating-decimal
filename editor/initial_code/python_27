@@ -1,11 +1,13 @@
-def checkio(a, b):
-    """
-        sums two passed arguments
-    """
-    return None
+def checkio(fraction):
+    numerator, denominator = fraction
+
+    return "0.(3)"
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
-    assert checkio(3, 2) == 5
-    assert checkio(5, 7) == 12
-    print('Done')
+    assert checkio([1, 3]) == "0.(3)", "1/3 Classic"
+    assert checkio([5, 3]) == "1.(6)", "5/3 The same, but bigger"
+    assert checkio([3, 8]) == "0.375", "3/8 without repeating part"
+    assert checkio([7, 11]) == "0.(63)", "7/11 prime/prime"
+    assert checkio([29, 12]) == "2.41(6)", "29/12 not and repeating part"
+    assert checkio([11, 7]) == "1.(571428)", "11/7 six digits"
