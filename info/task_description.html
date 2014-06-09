@@ -1,55 +1,106 @@
+<style>
+    .table-data {
+        border: #294270 solid 1px;
+
+    }
+
+    .table-data td,
+    .table-data th {
+        text-align: center;
+        font-size: 16px;
+        padding: 2px;
+    }
+</style>
+
+
 <p>
     In mathematics, a repeating decimal is a way of representing a rational number.
     A decimal representation of a number is called a repeating decimal if
     at some point there is some finite sequence of digits that is repeated infinitely.
-    For example: the decimal representation of 1/3 = 0.3333333… or 0.(3) becomes periodic just after the
-    decimal point, repeating the single-digit sequence "3" infinitely.
+    For example: the decimal representation of 1/3 = 0.3333333… or 0.(3)
+    becomes periodic just after the decimal point, repeating the single-digit sequence "3" infinitely.
     Here is another example is 27/26 = 1.0384615384615385… or 1.0(384615), where
-    the decimal becomes periodic after the second digit past the
-    decimal point, repeating the sequence "384615" infinitely.
-    Rational numbers are numbers which can be expressed in the form a/b where a
-    and b are integers and b is not zero. This form is known as a common
-    fraction. <a href="http://en.wikipedia.org/wiki/Repeating_decimal">Read more about this at
+    the decimal becomes periodic after the second digit past the decimal point, repeating the sequence "384615"
+    infinitely.
+    Rational numbers are numbers which can be expressed in the form a/b where a and b are integers and b is not zero.
+    This form is known as a common fraction. <a href="http://en.wikipedia.org/wiki/Repeating_decimal">Read more about
+    this at
     Wikipedia</a>.
 </p>
 
 <p>
-    You will need to convert a fraction into decimal representation.
+    You should write a function for the converting a fraction into decimal representation.
     If the decimal is repeating, you should represent it using the brackets format seen above.
-    You have a list of two integers, the first is the fractions numerator and the second is its denominator.
+    You are given two integers, the first is the fractions numerator and the second is its denominator.
     For this task, you will need to return the fraction in decimal representation as a string.
 </p>
 
-<p class="for_info_only"><img title="repeatin-decimal"
-                                 src="{{ MEDIA }}repeatin-decimal.png"
-                                 alt="repeatin-decimal" width="600px"/></p>
-<p class="for_editor_only"><img title="repeatin-decimal"
-                                   src="{{ MEDIA }}repeatin-decimal.png"
-                                   alt="repeatin-decimal" width="380px"/></p>
+<table class="table-data">
+    <tr>
+        <th>Fraction</th>
+        <th>Ellipsis</th>
+        <th>Brackets</th>
+    </tr>
+    <tr>
+        <td>1/3</td>
+        <td>0.333333...</td>
+        <td>0.(3)</td>
+    </tr>
+    <tr>
+        <td>5/3</td>
+        <td>1.666666...</td>
+        <td>1.(6)</td>
+    </tr>
+    <tr>
+        <td>3/8</td>
+        <td>0.375</td>
+        <td>0.375</td>
+    </tr>
+    <tr>
+        <td>7/11</td>
+        <td>0.636363...</td>
+        <td>0.(63)</td>
+    </tr>
+    <tr>
+        <td>29/12</td>
+        <td>2.41666666...</td>
+        <td>2.41(6)</td>
+    </tr>
+    <tr>
+        <td>11/7</td>
+        <td>1.571428571428...</td>
+        <td>1.(571428)</td>
+    </tr>
+</table>
 
 <p>
-    <strong>Input: </strong>A list of two integers as a numerator and
-    denominator.
+    <strong>Input: </strong>Two arguments. A numerator and a denominator as integers.
 </p>
 
 <p>
-    <strong>Output: </strong>A decimal representation of the fraction in
-    bracket format as a string.
+    <strong>Output: </strong>The decimal representation of the fraction in the bracket format as a string.
 </p>
 
 <div class="for_info_only">
     <p>
         <strong>Example:</strong>
     </p>
-<pre class="brush: python">checkio([1, 3]) == "0.(3)", "First"
-checkio([5, 3]) == "1.(6)", "Second"
-checkio([3, 8]) == "0.375", "Third"
-checkio([7, 11]) == "0.(63)", "Fourth"
-checkio([29, 12]) == "2.41(6)", "Fifth"
-checkio([11, 7]) == "1.(571428)", "Sixth"</pre>
+<pre class="brush: python">convert(1, 3) == "0.(3)"
+convert(5, 3) == "1.(6)"
+convert(3, 8) == "0.375"
+convert(7, 11) == "0.(63)"
+convert(29, 12) == "2.41(6)"
+convert(11, 7) == "1.(571428)"
+convert(0, 117) == "0"</pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
     Mathematical software.
+</p>
+
+<p>
+    <strong>Precondition: </strong><br>
+    0 &le; numerator &le; 1000<br>
+    1 &le; denominator &le; 1000<br>
 </p>
