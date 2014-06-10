@@ -24,9 +24,8 @@
     the decimal becomes periodic after the second digit past the decimal point, repeating the sequence "384615"
     infinitely.
     Rational numbers are numbers which can be expressed in the form a/b where a and b are integers and b is not zero.
-    This form is known as a common fraction. <a href="http://en.wikipedia.org/wiki/Repeating_decimal">Read more about
-    this at
-    Wikipedia</a>.
+    This form is known as a common fraction.
+    <a href="http://en.wikipedia.org/wiki/Repeating_decimal">Read more about this at Wikipedia</a>.
 </p>
 
 <p>
@@ -34,6 +33,7 @@
     If the decimal is repeating, you should represent it using the brackets format seen above.
     You are given two integers, the first is the fractions numerator and the second is its denominator.
     For this task, you will need to return the fraction in decimal representation as a string.
+    The integer results (as 0 or 2) must be ended with a dot.
 </p>
 
 <table class="table-data">
@@ -92,7 +92,9 @@ convert(3, 8) == "0.375"
 convert(7, 11) == "0.(63)"
 convert(29, 12) == "2.41(6)"
 convert(11, 7) == "1.(571428)"
-convert(0, 117) == "0"</pre>
+convert(0, 117) == "0."
+convert(4, 2) == "2."
+</pre>
 </div>
 
 <p class="for_info_only">
