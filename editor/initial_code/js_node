@@ -1,6 +1,6 @@
 "use strict";
 
-function stair(numbers) {
+function convert(numerator, denominator) {
     // your code here
     return 0;
 }
